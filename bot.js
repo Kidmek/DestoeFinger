@@ -30,7 +30,7 @@ if (process.env.CHANNEL === 'main') {
 }
 
 const ENDPOINT = process.env.ENDPOINT
-console.log(process.env.CHANNEL)
+console.log(process.env.CHANNEL === 'main', 'channel')
 
 console.log(
   'Tournament ' + USERNAME + ' Instance ' + INSTANCE + ' End Point ' + ENDPOINT
