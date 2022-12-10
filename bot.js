@@ -4,7 +4,7 @@ const { Games, Tournaments } = require('./schema')
 const Bot = require('node-telegram-bot-api')
 let bot
 
-bot = new Bot(token)
+bot = new Bot(token, { polling: true })
 // if(process.env.NODE_ENV === 'production') {
 //   bot = new Bot(token);
 //   bot.setWebHook(process.env.TOKEN + bot.token);
